@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hysteria Config Bot - Расширение для браузера</title>
+    <link rel="stylesheet" href="css/download.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="status">
+            <div class="status-dot"></div>
+            Доступно для загрузки
+        </div>
+
+        <img src="assets/nyashka.jpg" alt="Hysteria Config Bot" class="icon">
+
+        <h1>Hysteria Config Bot</h1>
+
+        <p class="description">
+            Расширение для быстрого доступа к боту настройки Hysteria конфигурации
+        </p>
+
+        <div class="features">
+            <div class="feature">Быстрый доступ</div>
+            <div class="feature">Безопасно</div>
+            <div class="feature">Удобно</div>
+        </div>
+
+        <div class="footer">
+            <p>Версия 1.0.0 • <a href="https://github.com/88venom14/hysteriaconfigbot">GitHub</a></p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const link = document.createElement('a');
+                link.href = 'hysteria-extension.zip';
+                link.download = 'hysteria-extension.zip';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

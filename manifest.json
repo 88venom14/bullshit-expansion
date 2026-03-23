@@ -1,0 +1,23 @@
+{
+    "name": "Hysteria Config Bot",
+    "description": "Лучший бот для конфига хистерия",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Hysteria Config Bot",
+        "default_icon": {
+            "16": "assets/nyashka.jpg",
+            "48": "assets/nyashka.jpg",
+            "128": "assets/nyashka.jpg"
+        }
+    },
+    "icons": {
+        "16": "assets/nyashka.jpg",
+        "48": "assets/nyashka.jpg",
+        "128": "assets/nyashka.jpg"
+    },
+    "permissions": [
+        "storage"
+    ]
+}

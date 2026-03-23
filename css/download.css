@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 24px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.description {
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.feature {
+    background: #1a1a1a;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #cccccc;
+    border: 1px solid #222222;
+    white-space: nowrap;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #1a1a1a;
+    font-size: 12px;
+    color: #555555;
+}
+
+.footer a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #00ff00;
+    margin-bottom: 24px;
+    border: 1px solid #222222;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #00ff00;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
